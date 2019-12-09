@@ -16,7 +16,7 @@ public class MyClient {
                     handler(new MyClientInitalizer());
             //监听8899端口
             ChannelFuture channelFuture = bootstrap.connect("localhost",8899).sync();
-            channelFuture.channel().close().sync();
+            channelFuture.channel().closeFuture().sync();
         }
         finally {
             eventGroup.shutdownGracefully();
