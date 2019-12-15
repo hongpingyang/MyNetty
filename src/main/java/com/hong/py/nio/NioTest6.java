@@ -13,6 +13,7 @@ import java.nio.channels.FileChannel;
  */
 public class NioTest6 {
     public static void main(String[] args) throws IOException {
+
         FileInputStream fileInputStream = new FileInputStream("input.txt");
         FileOutputStream fileOutputStream = new FileOutputStream("output.txt");
         FileChannel inputChannel=fileInputStream.getChannel();
