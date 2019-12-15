@@ -3,7 +3,7 @@ syntax = "proto2";
 package com.hong.py.protobuf;
 
 option optimize_for = SPEED;
-option java_package = "com.hong.py.netty.fifthExample";
+option java_package = "com.hong.py.proto";
 option java_outer_classname = "MyDataInfo";
 
 message MyMessage{
